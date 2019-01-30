@@ -6,6 +6,19 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <!--<item name="buttonStyle">@style/Widget.AppCompat.Button</item>-->
+        <item name="buttonStyle">@style/StrongBeatBoxButton</item>
+        <item name="android:windowBackground">@color/soothing_blue</item>
+    </style>
+
+    <style name="BeatBoxButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/button_beat_box</item>
+    </style>
+
+    <style name="StrongBeatBoxButton" parent="BeatBoxButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>
