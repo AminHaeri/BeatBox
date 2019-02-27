@@ -1,4 +1,4 @@
-package com.example.amin.beatbox;
+package com.example.amin.beatbox.model;
 
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;

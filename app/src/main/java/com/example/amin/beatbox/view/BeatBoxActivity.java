@@ -1,9 +1,7 @@
-package com.example.amin.beatbox;
+package com.example.amin.beatbox.view;
 
 import android.net.Uri;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 public class BeatBoxActivity extends SingleFragmentActivity implements BeatBoxFragment.OnFragmentInteractionListener {
 

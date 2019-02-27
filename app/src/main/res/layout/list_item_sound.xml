@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="8dp">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <data>
+        <variable
+            name="soundviewmodel"
+            type="com.example.amin.beatbox.viewmodel.SoundViewModel" />
+    </data>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
 
-    <Button
-        android:id="@+id/list_item_sound_button"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center">
+        <Button
+            android:id="@+id/list_item_sound_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:text="@{soundviewmodel.title}">
 
-    </Button>
-</FrameLayout>
+        </Button>
+    </FrameLayout>
+</layout>
