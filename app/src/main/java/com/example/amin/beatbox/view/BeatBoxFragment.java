@@ -130,14 +130,6 @@ public class BeatBoxFragment extends Fragment {
 
             mBinding = binding;
             mBinding.setSoundviewmodel(new SoundViewModel(mBeatBox));
-
-            mBinding.listItemSoundButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    mBeatBox.play(mSound);
-                }
-            });
-
         }
 
         public void bindSound(Sound sound) {
